@@ -1,0 +1,209 @@
+:root {
+    --mainBlue: #40ACF1;
+    --transparentBlue: rgba(64, 172, 241, 0.7);
+    --mainWhite: #FFFFFF;
+    --mainBlack: #292F36;
+    --mainGrey: rgb(216, 214, 214);
+    --mainYellow: #e3b505;
+    --mainRed: #d50032;
+}
+
+* {
+    
+    font-family: "Nothing You Could Do", cursive;
+    
+    /* color: var(--mainBlack); */
+    
+}
+.nav-link{
+    color: #31383f;
+    font-size:large ;
+    margin-left: 1rem;
+    /* transition: font-size .5s; */
+    
+}
+.nav-link:hover{
+    color: black;
+    /* font-size: 1.3rem; */
+    
+}
+.nav-icon{
+    color: black;
+    font-size: 1.5rem;
+    transition: font-size 1s;
+}
+.nav-icon:hover{
+    text-decoration: none;
+    font-size: 1.75rem;
+    
+}
+.header{
+    overflow: hidden;
+}
+
+.height-max{
+    min-height: calc(100vh - 76px);
+    background: url(../img/taetae2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: zoom 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1) translatey(-2%);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.header-text{
+    margin-bottom: 1rem;
+}
+.discover{
+    margin-right: 10rem;
+}
+@media screen and (max-width:576px)
+{
+  .title  {
+    font-size: 1.5rem;
+  }
+  .title-heading{
+    font-size: 1rem;
+  }
+  .discover{
+    font-size: 1rem;
+  }
+}
+
+
+.cartier{
+    background-color: #d50032 ;
+    border-radius: .5rem;
+    
+
+}
+.skills-icon{
+    font-size: 3rem;
+}
+.skills-header{
+    text-decoration: none;
+}
+.skills-header:hover{
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.skills-underline{
+    border-bottom: .25rem solid var(--mainBlack);
+    margin-top: 1rem;
+   
+}
+a{
+    text-decoration: none;
+    color: #0b0c0d!important;
+}
+
+
+
+.preloader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--mainWhite);
+    z-index: 999;
+  }
+  .hidePreloader{
+    display: none !important;
+  }
+
+.categories{
+    background-color: var(--mainGrey);
+}
+.order{
+    background-image: url(../img/WATCH11.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    
+    
+} 
+.order-text{
+    color: #FFFFFF!important;
+}
+@media screen and (max-width:767px)
+{
+  .order{
+    background: #d50032;  
+  }
+}
+.product{
+    overflow: hidden;
+}
+.product-text{
+    margin-top: 12rem;
+}
+@media screen and (max-width:992px)
+{
+  .product-text{
+    margin-top: 0;
+    font-size: x-small;
+    
+    
+  }
+  .an{
+    /* display: block!important; */
+    width: 100%;
+  }
+}
+.product-photo{
+    
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.product-photo-container:hover .product-photo{
+    transform: scale(1.3);
+}
+
+.subscribe{
+    
+    color: #FFFFFF!important;
+    opacity: .85;
+}
+.subscribe:hover{
+    opacity: 1;
+}
+/* .video-container{
+    margin-left: 15vh;
+    
+} */
+@media screen and (max-width:776px)
+{
+  .video-text{
+    font-size: x-small; 
+  }
+  .video-container{
+    display: block;
+  }
+}
+/* .subscribe-section{
+    background-color: #d50032;
+} */
+.footer-link:hover{
+    color: #d50032!important;
+}
+.footer-text{
+    color: #FFFFFF!important;
+}
+.footer-end{
+    background-color: #d50032;
+    
+}
